@@ -1,0 +1,12 @@
+{
+    "games": {
+        "flash": true,
+        "html": true,
+        "unity": true,
+        "emulated": true
+    },
+    "links": {
+        "github": ""
+    },
+    "theme": "dark"
+}

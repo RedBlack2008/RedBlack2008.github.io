@@ -47,3 +47,6 @@ html, body{
 .break{
     flex-basis: 100%;
 }
+a{
+    text-decoration: none;
+}
