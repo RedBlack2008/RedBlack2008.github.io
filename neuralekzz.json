@@ -9,8 +9,9 @@
         "github": "https://github.com/neuralekzz/neuralekzz.github.io"
     },
     "meta": {
-        "title": "Neuralekzz' Game Site",
+        "title": "neuralekzz.github.io",
         "description": "A game site designed for easy reproduction.",
+        "image": "https://raw.githubusercontent.com/neuralekzz/neuralekzz.github.io/main/images/neuralekzz.png",
         "version": 1
     },
     "theme": "twentysecond"

@@ -24,6 +24,12 @@ function handleData(data) {
 		themeData.href = `../css/${data.theme}.css`;
 	}
 	document.head.appendChild(themeData);
+	const title = document.querySelector("[property=og:title]");
+	const description = document.querySelector("[property=og:description]");
+	const image = document.querySelector("[property=og:description]");
+	title.content = data.meta.title;
+	description.content = data.meta.description;
+	image.content = data.meta.image;
 }
 
 fetch("../neuralekzz.json")
