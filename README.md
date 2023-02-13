@@ -2,3 +2,5 @@
 
 Neuralekzz is a customizable game site designed for easy replication and configuration.
 
+Refer to the [wiki](https://github.com/neuralekzz/neuralekzz.github.io/wiki/Creating-a-Theme) for documentation. 
+
