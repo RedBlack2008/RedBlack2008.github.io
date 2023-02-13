@@ -8,5 +8,6 @@
     "links": {
         "github": "https://github.com/neuralekzz/neuralekzz.github.io"
     },
+    "themes": ["dark", "light", "twentysecond"],
     "theme": "twentysecond"
 }

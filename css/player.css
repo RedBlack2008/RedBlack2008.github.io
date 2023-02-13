@@ -1,0 +1,10 @@
+body {
+	background-color: var(--background);
+	color: var(--text);
+	margin: -8px;
+}
+ruffle-player {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}

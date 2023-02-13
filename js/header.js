@@ -2,7 +2,7 @@ const availableThemes = ["dark", "light", "twentysecond", "custom"];
 var siteData;
 
 function validateData(data) {
-	if (availableThemes.includes(data.theme) === false) {
+	if (data.themes.includes(data.theme) === false) {
 		throw new Error("Theme does not exist!");
 	}
 	for (games in data.games) {
