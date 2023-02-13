@@ -1,7 +1,4 @@
 # neuralekzz.github.io
 
-Neuralekzz Games, a customizable game site designed for easy forking.
+Neuralekzz Games is a customizable game site designed for easy replication and configuration.
 
-## Forking
-
-Refer to [How to fork and create your own site](https://github.com/neuralekzz/neuralekzz.github.io/blob/main/instructions/FORK.md)
