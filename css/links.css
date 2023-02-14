@@ -3,3 +3,44 @@ body {
 	color: var(--text);
 	background-attachment: fixed;
 }
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+.container2 {
+	display: flex;
+	background-color: var(--color-1);
+	width: 1000px;
+	height: fit-content; /* temporary */
+	font-size: var(--font-size);
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	margin-top: 50px;
+	padding: 20px;
+	font-family: var(--font-family);
+	font-variant: var(--font-variant);
+	flex-direction: column;
+}
+
+section {
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(255, 255, 255, 0.05);
+	padding: 20px 0px;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.title {
+	font-size: calc(var(--font-size) * 1.25);
+}
+
+a {
+	font-size: calc(var(--font-size) * 0.75);
+	color: var(--link);
+}
