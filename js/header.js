@@ -19,9 +19,9 @@ function handleData(data) {
 	themeData = document.createElement("link");
 	themeData.rel = "stylesheet";
 	if (document.body.classList.contains("index")) {
-		themeData.href = `css/${data.theme}.css`;
+		themeData.href = `css/themes/${data.theme}.css`;
 	} else {
-		themeData.href = `../css/${data.theme}.css`;
+		themeData.href = `../css/themes/${data.theme}.css`;
 	}
 	document.head.appendChild(themeData);
 }

@@ -1,6 +1,8 @@
 body {
 	background: var(--background);
+	background-attachment: fixed;
 }
+
 .container {
 	display: flex;
 	justify-content: center;
@@ -9,37 +11,39 @@ body {
 }
 .container2 {
 	display: flex;
-	background-color: var(--color-1);
+	background: var(--color-1);
 	padding: 20px;
 	width: 1000px;
 	height: 400px;
 	flex-wrap: wrap;
 	flex-direction: row;
+	justify-content: center;
 }
 html,
 body {
 	height: 100%;
 	overflow-y: hidden;
+	font-family: var(--font-family);
+	font-variant: var(--font-variant);
 }
 .section {
 	width: 100px;
 	height: 100px;
-	background-color: var(--color-3);
+	background: var(--color-3);
 	margin: 10px;
 	border-radius: 10px;
-	box-shadow: -8px 8px var(--color-2), -4px 4px var(--color-2);
+	box-shadow: -7.2px 12px var(--color-2), -3.6px 6px var(--color-2), -5.4px 9px var(--color-2);
 	transition: box-shadow 0.25s, transform 0.25s;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 30px;
-	color: var(--text);
+	font-size: var(--font-size);
 	text-align: center;
-	font-family: Helvetica, Arial, sans-serif;
+	color: var(--text);
 }
 .section:hover {
-	box-shadow: -4px 4px var(--color-2);
-	transform: translate(-4px, 4px);
+	box-shadow: -3px 5px var(--color-2);
+	transform: translate(-4.3px, 6.5px);
 }
 .big {
 	width: 300px;

@@ -1,6 +1,7 @@
 body {
-	background-color: var(--background);
+	background: var(--background);
 	color: var(--text);
+	background-attachment: fixed;
 }
 
 .container {
@@ -12,11 +13,13 @@ body {
 	background-color: var(--color-1);
 	width: 1000px;
 	height: 2000px; /* temporary */
-	font-size: 30px;
+	font-size: var(--font-size);
 	text-align: center;
 	font-family: Helvetica, Arial, sans-serif;
 	margin-top: 50px;
 	padding: 20px;
+	font-family: var(--font-family);
+	font-variant: var(--font-variant);
 }
 html,
 body {

@@ -1,0 +1,11 @@
+:root {
+	--background: linear-gradient(#000000, #113311);
+	--color-1: #090909;
+	--color-2: #121212;
+	--color-3: #181818;
+	--color-4: #222222;
+	--text: #55ff55;
+	--font-size: 22px;
+	--font-family: "Courier New", Courier, monospace;
+	--font-variant: normal;
+}

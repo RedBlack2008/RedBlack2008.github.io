@@ -1,0 +1,28 @@
+:root {
+	/*Delete the comments when creating your own theme!*/
+
+	--background: red;
+	--color-1: #ffffff;
+	--color-2: yellow;
+	--color-3: purple;
+	--color-4: rgb(20, 200, 90);
+	--text: black;
+	/* colors 
+    Colors for the site to use.
+    */
+
+	--font-size: 30px;
+	/* --font-size
+    Determines the size of text.
+    */
+
+	--font-family: Helvetica, Arial, sans-serif;
+	/* --font-family
+    A list of fonts, from left to right. If the first one is not found, the second one is used, and so on and so forth.
+    */
+
+	--font-variant: normal;
+	/* --font-variant
+    A font variant. 
+    */
+}

@@ -14,34 +14,19 @@
 		</script>
 		<script src="../js/header.js"></script>
 		<link rel="stylesheet" href="../css/player.css" />
-		<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-		<title>Neuralekzz</title>
+		<link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+		<title>Neuralekzz | Flash Games</title>
 		<meta property="og:title" content="neuralekzz.github.io" />
 		<meta property="og:description" content="A game site designed for easy replication and configuration." />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="https://raw.githubusercontent.com/neuralekzz/neuralekzz.github.io/main/images/neuralekzz.png" />
 	</head>
-	<body>
-		<div id="container"></div>
+	<body class="flash">
+		<div class="container">
+			<div class="container-games"></div>
+		</div>
 	</body>
 	<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-	<script>
-		let game;
-		if (new URLSearchParams(window.location.search).has("game")) {
-			urlparams = new URLSearchParams(window.location.search);
-			game = urlparams.get("game");
-			window.RufflePlayer = window.RufflePlayer || {};
-			window.addEventListener("load", (event) => {
-				const ruffle = window.RufflePlayer.newest();
-				window.RufflePlayer.config.letterbox = "on";
-				const player = ruffle.createPlayer();
-				const container = document.getElementById("container");
-				container.appendChild(player);
-				fetch(`https://raw.githubusercontent.com/neuralekzz/neuralekzz-assets/main/flash/${game}.swf`).then(player.load(`https://raw.githubusercontent.com/neuralekzz/neuralekzz-assets/main/flash/${game}.swf`));
-			});
-		} else {
-			// add here
-		}
-	</script>
+	<script src="../js/flashplayer.js"></script>
 	<script src="../js/footer.js"></script>
 </html>

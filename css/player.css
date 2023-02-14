@@ -1,10 +1,30 @@
 body {
-	background-color: var(--background);
+	background: var(--background);
 	color: var(--text);
-	margin: -8px;
+	background-attachment: fixed;
 }
 ruffle-player {
 	position: absolute;
 	height: 100%;
 	width: 100%;
+	background: var(--background);
+	margin: -8px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+}
+.container-games {
+	display: flex;
+	background-color: var(--color-1);
+	width: 1000px;
+	height: 2000px; /* temporary */
+	font-size: var(--font-size);
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	margin-top: 50px;
+	padding: 20px;
+	font-family: var(--font-family);
+	font-variant: var(--font-variant);
 }

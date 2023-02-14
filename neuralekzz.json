@@ -6,8 +6,9 @@
         "emulated": true
     },
     "links": {
-        "github": "https://github.com/neuralekzz/neuralekzz.github.io"
+        "github": "https://github.com/neuralekzz/neuralekzz.github.io",
+        "issue": "https://github.com/neuralekzz/neuralekzz.github.io/issues/new"
     },
-    "themes": ["dark", "light", "twentysecond"],
-    "theme": "dark"
+    "themes": ["dark", "light", "twentysecond", "hackerman"],
+    "theme": "twentysecond"
 }
