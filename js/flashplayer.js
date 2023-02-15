@@ -1,6 +1,8 @@
 let game;
 function setTitle(gamedata, gametype) {
-	gamedata.flash;
+	const flashgames = gamedata.flash;
+	gametitle = flashgames.find((gamer) => gamer[0] === gametype)[1];
+
 	let title = document.querySelector("title");
 	title.innerHTML = `Neuralekzz | ${gametitle}`;
 }
@@ -13,6 +15,7 @@ if (new URLSearchParams(window.location.search).has("game")) {
 	window.addEventListener("load", (event) => {
 		const ruffle = window.RufflePlayer.newest();
 		window.RufflePlayer.config.letterbox = "on";
+		window.RufflePlayer.config.autoplay = "auto";
 		const player = ruffle.createPlayer();
 		container.appendChild(player);
 		fetch(`https://raw.githubusercontent.com/neuralekzz/neuralekzz-assets/main/flash/${game}.swf`).then(player.load(`https://raw.githubusercontent.com/neuralekzz/neuralekzz-assets/main/flash/${game}.swf`));
@@ -21,4 +24,6 @@ if (new URLSearchParams(window.location.search).has("game")) {
 	fetch("https://raw.githubusercontent.com/neuralekzz/neuralekzz-assets/main/games.json")
 		.then((data) => data.json())
 		.then((gamed) => setTitle(gamed, game));
+	style = document.querySelector('link[href="../css/flashgames.css"]');
+	style.href = "../css/player.css";
 }
