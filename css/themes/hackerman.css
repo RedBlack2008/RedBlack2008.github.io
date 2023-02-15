@@ -10,3 +10,7 @@
 	--font-family: "Courier New", Courier, monospace;
 	--font-variant: normal;
 }
+
+img {
+	filter: sepia(100%) hue-rotate(45deg) saturate(150%);
+}
