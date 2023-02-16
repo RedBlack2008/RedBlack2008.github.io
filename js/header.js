@@ -24,7 +24,7 @@ function handleData(data) {
 	themeData = document.createElement("link");
 	themeData.rel = "stylesheet";
 	let theme;
-	if (localStorage.getItem("theme") == "") {
+	if (localStorage.getItem("theme") == null) {
 		theme = siteData.theme;
 	} else {
 		theme = localStorage.getItem("theme");
