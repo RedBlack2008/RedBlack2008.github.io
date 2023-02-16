@@ -14,6 +14,7 @@ if (new URLSearchParams(window.location.search).has("game")) {
 	window.RufflePlayer = window.RufflePlayer || {};
 	window.addEventListener("load", (event) => {
 		const ruffle = window.RufflePlayer.newest();
+		window.RufflePlayer.config = window.RufflePlayer.config || {};
 		window.RufflePlayer.config.letterbox = "on";
 		window.RufflePlayer.config.autoplay = "auto";
 		window.RufflePlayer.config.publicPath = "files";
