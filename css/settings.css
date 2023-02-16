@@ -2,4 +2,47 @@ body {
 	background: var(--background);
 	color: var(--text);
 	background-attachment: fixed;
+	font-family: var(--font-family);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container2 {
+	display: flex;
+	justify-content: center;
+	width: 1000px;
+	height: fit-content;
+	margin-top: 50px;
+	padding: 20px;
+	background-color: var(--color-1);
+}
+.title {
+	font-size: calc(var(--font-size) * 1.25);
+	display: block;
+	margin-bottom: 20px;
+}
+section {
+	background-color: rgba(255, 255, 255, 0.05);
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+input {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: none;
+	margin-bottom: 10px;
+	font-size: calc(var(--font-size) * 0.75);
+	color: var(--text);
+}
+button {
+	background-color: rgba(255, 255, 255, 0.1);
+	font-size: calc(var(--font-size) * 0.85);
+	color: var(--text);
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
