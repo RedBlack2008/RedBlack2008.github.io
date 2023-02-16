@@ -5,8 +5,6 @@ body {
 }
 ruffle-player {
 	position: absolute;
-	height: 100%;
-	width: 100%;
 	background: var(--background);
 	margin: -8px;
 }
