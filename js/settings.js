@@ -20,3 +20,20 @@ function settabcloakButton() {
 		documentTitle.innerHTML = title;
 	}
 }
+
+const themeSelect = document.querySelector("select#theme");
+
+function settheme() {
+	localStorage.setItem("theme", themeSelect.value);
+	let themeData = document.querySelector('link[href^="../css/themes/"]');
+	themeData.href = `../css/themes/${themeSelect.value}.css`;
+}
+
+setTimeout(() => {
+	for (theme of siteData.themes) {
+		let themeOption = document.createElement("option");
+		themeOption.value = theme;
+		themeOption.innerHTML = theme.toTitleCase();
+		themeSelect.appendChild(themeOption);
+	}
+}, 200);

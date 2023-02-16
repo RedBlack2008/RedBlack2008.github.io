@@ -1,4 +1,9 @@
-const availableThemes = ["dark", "light", "twentysecond", "custom"];
+String.prototype.toTitleCase = function () {
+	return this.replace(/\w\S*/g, function (txt) {
+		return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+	});
+};
+
 var siteData;
 
 function validateData(data) {
@@ -18,10 +23,16 @@ function handleData(data) {
 	console.log(data);
 	themeData = document.createElement("link");
 	themeData.rel = "stylesheet";
-	if (document.body.classList.contains("index")) {
-		themeData.href = `css/themes/${data.theme}.css`;
+	let theme;
+	if (localStorage.getItem("theme") == "") {
+		theme = siteData.theme;
 	} else {
-		themeData.href = `../css/themes/${data.theme}.css`;
+		theme = localStorage.getItem("theme");
+	}
+	if (document.body.classList.contains("index")) {
+		themeData.href = `css/themes/${theme}.css`;
+	} else {
+		themeData.href = `../css/themes/${theme}.css`;
 	}
 	document.head.appendChild(themeData);
 }
