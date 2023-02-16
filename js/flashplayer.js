@@ -23,9 +23,11 @@ if (new URLSearchParams(window.location.search).has("game")) {
 		fetch(`https://raw.githubusercontent.com/neuralekzz/neuralekzz-assets/main/flash/${game}.swf`).then(player.load(`https://raw.githubusercontent.com/neuralekzz/neuralekzz-assets/main/flash/${game}.swf`));
 	});
 	document.body.style.overflowY = "hidden";
-	fetch("https://raw.githubusercontent.com/neuralekzz/neuralekzz-assets/main/games.json")
-		.then((data) => data.json())
-		.then((gamed) => setTitle(gamed, game));
+	if (!localStorage.getItem("title") || !localStorage.getItem("favicon")) {
+		fetch("https://raw.githubusercontent.com/neuralekzz/neuralekzz-assets/main/games.json")
+			.then((data) => data.json())
+			.then((gamed) => setTitle(gamed, game));
+	}
 	style = document.querySelector('link[href="../css/flashgames.css"]');
 	style.href = "../css/player.css";
 }
