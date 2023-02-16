@@ -16,6 +16,7 @@ if (new URLSearchParams(window.location.search).has("game")) {
 		const ruffle = window.RufflePlayer.newest();
 		window.RufflePlayer.config.letterbox = "on";
 		window.RufflePlayer.config.autoplay = "auto";
+		window.RufflePlayer.config.publicPath = "files";
 		const player = ruffle.createPlayer();
 		container.appendChild(player);
 		fetch(`https://raw.githubusercontent.com/neuralekzz/neuralekzz-assets/main/flash/${game}.swf`).then(player.load(`https://raw.githubusercontent.com/neuralekzz/neuralekzz-assets/main/flash/${game}.swf`));
